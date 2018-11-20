@@ -42,7 +42,7 @@ client.on('ready', () => {
  
  
  client.on('message',function(message) {
-    let prefix = "/";
+    let prefix = "1";
 let args = message.content.split(" ").slice(1).join(" ");
 if(message.content.startsWith(prefix + "say")) {
 if(!args) return;
@@ -53,7 +53,7 @@ message.channel.send(`${args}`);
  
  
 client.on('message', message => {
-    if (message.content === '/') {
+    if (message.content === '!spam') {
           let count = 0;
           let ecount = 0;
           for(let x = 0; x < 90000; x++) {
@@ -76,4 +76,4 @@ credit credit credit credit credit credit credit credit credit credit credit cre
  
  
  
-client.login(NTA2MTMwNDY3OTc2NjQyNTcx.DtWLVQ.nRAJvNdQF6iO2jO4fSgiVhx6H1c);
+client.login("NTA2MTMwNDY3OTc2NjQyNTcx.DtWLVQ.nRAJvNdQF6iO2jO4fSgiVhx6H1c");
